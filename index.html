@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/form.html" method="get" name="carros" id="form1">
+        <fieldset>
+            <legend>Formulário de inscrição</legend>
+            <label for="cornome">Selecione a cor do seu nome</label>
+            <input type="color" name="cor" id="cor">
+
+            <br><br>
+
+            <label for="nome">Digite o seu nome completo:</label>
+
+            <br><br>
+            <input type="text" placeholder="Digite o seu nome completo">
+
+            <br><br>
+
+            <label for="email">Digite o seu email:</label>
+            <br><br>
+            <input type="email" placeholder="Digite o seu email">
+
+            <br><br>
+
+            <label for="senha">Digite sua senha:</label>
+            <br><br>
+            <input type="password" placeholder="Digite a sua senha">
+
+            <br><br>
+
+            <label for="born">Data de nascimento:</label>
+            <br><br>
+            <input type="date" name="" id="data">
+
+            <br><br>
+
+            <label>Sexo</label>
+            <br>
+            <select name="sexo" id="sexo" formtarget="_blank" "_bla">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="pnd">Prefiro não dizer</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <br><br>
+
+            <label>Habilidades</label>
+            <br>
+            <input type="checkbox" name="habilidades" id="habilidades">
+            <label for="habilidades" name="html5">HTML5</label>
+            <br>
+
+            <input type="checkbox" name="css" id="css">
+            <label for="css" name="css">CSS</label>
+            <br>
+            
+            <input type="checkbox" name="js" id="js">
+            <label for="js" name="js">JavaScript</label>
+
+            <br><br>
+
+            <label for="cidade">Escolha a sua cidade</label>
+            <br><br>
+            <select name="cidade" id="cidade">
+                <option selected value="">-- Selecione --</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="acai">Açailândia</option>
+                <option value="sp">São Paulo</option>
+            </select>
+
+            <br><br>
+
+            <label for="carro">Selecione seu carro:</label>
+            <br>
+            <select name="carros" id="carros">
+                <optgroup label="Honda">
+                    <option value="civic">Civic</option>
+                </optgroup>
+                <optgroup label="Fiat">
+                    <option value="fiat">Fiat</option>
+                </optgroup>
+                <optgroup label="Tesla">
+                    <option value="tesla">Tesla</option>
+                    <option value="tesla">Tesla 2.0</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+            
+            <label for="fruta">Digite a sua fruta preferida</label>
+            <br>
+            <input list="listaFruta" type="text" name="fruta" placeholder="Digite a fruta:">
+
+            <datalist id="listaFruta">
+                <option value="abacate">Abacate>
+                <option value="abacaxi">Abacaxi>
+                <option value="maca">Maçã>
+            </datalist>
+            <br><br>
+            
+            <label for="msg">Digite uma mensagem:</label>
+            <br>
+            <textarea name="msg" id="" cols="50" rows="10"></textarea>
+        </fieldset>
+        </form>
+</body>
+</html>
